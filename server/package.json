@@ -1,0 +1,29 @@
+{
+  "name": "react-fullstack-mvp",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "My first React FullStack MVP!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tiwala/react-fullstack-mvp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tiwala/react-fullstack-mvp/issues"
+  },
+  "homepage": "https://github.com/Tiwala/react-fullstack-mvp#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19",
+    "pg": "^8.8.0"
+  }
+}
