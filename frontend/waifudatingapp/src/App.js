@@ -13,6 +13,8 @@ function App() {
   
   const [loggedIn, checkLogin] = useState(false);
 
+  const [swiping, startSwiping] = useState(false);
+
   useEffect(() => {
     fetch('http://localhost:6969/waifus')
     .then((res) => res.json())
@@ -79,7 +81,7 @@ function App() {
       <Header handleLogin={handleLogin} loggedIn={loggedIn} currentProfile={currentProfile}/>
       <div className='container'>
         {loggedIn ? (
-          <OwnProfile currentProfile={currentProfile}/>
+          <OwnProfile currentProfile={currentProfile} swiping={swiping} startSwiping={startSwiping} waifus={waifus}/>
         ) : (
           ''
         )}

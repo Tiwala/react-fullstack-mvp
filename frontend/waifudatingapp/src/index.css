@@ -77,3 +77,18 @@ html {
   box-sizing: border-box;
 }
 
+.currentPhoto {
+  width: 400px;
+}
+
+.aboutDiv {
+  width: 400px;
+  overflow-wrap: break-word;
+}
+
+#startSwipingBtn {
+  background: #fa0a72;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
