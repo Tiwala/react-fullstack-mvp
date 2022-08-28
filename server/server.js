@@ -20,7 +20,7 @@ if (process.env.NODE_ENV === "production") {
 
 const pool = new pg.Pool(dbConfig);
 
-app.use(express.static("frontend"));
+app.use(express.static("frontend/waifudatingapp"));
 app.use(cors());
 app.use(express.json())
 
