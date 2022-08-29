@@ -79,7 +79,7 @@ html {
   width: 80%;
   margin: auto;
   box-sizing: border-box;
-  background-color: rgba(255,182,193,0.8);
+  background-color: rgba(255,182,193,0.7);
   color: black
 }
 
@@ -104,6 +104,7 @@ html {
   color: white;
   font-weight: bold;
   border: none;
+  margin-top: 20px;
 }
 
 #swipeDiv {
