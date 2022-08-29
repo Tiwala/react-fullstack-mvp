@@ -6,6 +6,10 @@ const Header = ({handleLogin, loggedIn, currentProfile}) => {
   const [password, setPassword] = useState('')
 
 
+  const refreshPage = () => {
+    window.location.reload(false);
+  }
+
   const onSubmit = (e) => {
     e.preventDefault();
 
@@ -17,7 +21,7 @@ const Header = ({handleLogin, loggedIn, currentProfile}) => {
   return (
     <div id="header">
         <div>
-            <img id="logo" src={logo}/>
+            <img id="logo" onClick={refreshPage} src={logo}/>
         </div>
         <div id="userLogDiv">
           {/* insert ternary for loggedIn here; if true, put danny profile pic and name */}
