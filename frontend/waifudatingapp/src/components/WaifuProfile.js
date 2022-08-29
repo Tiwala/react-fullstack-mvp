@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import x from './xIcon.png'
+import heart from './heartIcon.png'
 
 const WaifuProfile = ({waifus}) => {
     const [waifuIndex, setIndex] = useState(0);
@@ -13,8 +15,13 @@ const WaifuProfile = ({waifus}) => {
         if (waifus[waifuIndex + 1]) {
             setCurrentWaifu(waifus[waifuIndex + 1]);
         } else {
-            alert('You have run out of swipes for today! Try again tomorrow!');
+            alert('You have run out of waifus for today! Try again tomorrow!');
         }
+    }
+
+    const like = () => {
+        alert('It\'s a match!')
+        swipe();
     }
 
     return (
@@ -27,7 +34,10 @@ const WaifuProfile = ({waifus}) => {
                 {currentWaifu.profile}
             </div>
             <div id="swipeDiv">
-                <button onClick={swipe}>swipe</button>
+                {/* <button onClick={swipe}>swipe</button> */}
+                <input type="image" className="swiper" src={x} onClick={swipe}/>
+                Waifu?
+                <input type="image" className="swiper" src={heart} onClick={like}/>
             </div>
         </div>
     )

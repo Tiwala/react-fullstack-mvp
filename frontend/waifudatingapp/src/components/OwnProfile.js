@@ -1,6 +1,8 @@
 import React from 'react'
 import WaifuProfile from './WaifuProfile'
 
+
+
 const OwnProfile = ({currentProfile, startSwiping, swiping, waifus}) => {
   const onClick = () => {
     startSwiping(true);

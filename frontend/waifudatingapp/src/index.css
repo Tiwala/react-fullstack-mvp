@@ -15,6 +15,10 @@ code {
 html {
   overflow-y: scroll;
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url('components/wallpaperflare.com_wallpaper.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
 }
 
 #header {
@@ -75,13 +79,22 @@ html {
   width: 80%;
   margin: auto;
   box-sizing: border-box;
+  background-color: rgba(255,182,193,0.8);
+  color: black
 }
 
 .currentPhoto {
-  width: 400px;
+  height: 600px;
+}
+
+.nameDiv {
+  font-size: 2em;
+  margin-top: 10px;
+  color: black;
 }
 
 .aboutDiv {
+  margin-top: 10px;
   width: 400px;
   overflow-wrap: break-word;
 }
@@ -91,4 +104,17 @@ html {
   color: white;
   font-weight: bold;
   border: none;
+}
+
+#swipeDiv {
+  font-size: 2em;
+  color: red;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.swiper {
+  width: 40px;
 }
