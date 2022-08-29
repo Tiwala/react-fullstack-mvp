@@ -79,7 +79,8 @@ html {
   width: 80%;
   margin: auto;
   box-sizing: border-box;
-  background-color: rgba(255,182,193,0.7);
+  background-color: rgba(255,182,193,0.9);
+  /* background-color: rgba(192,192,192,0.6); */
   color: black
 }
 
@@ -90,7 +91,7 @@ html {
 .nameDiv {
   font-size: 2em;
   margin-top: 10px;
-  color: black;
+  /* color: black; */
 }
 
 .aboutDiv {
@@ -109,7 +110,7 @@ html {
 
 #swipeDiv {
   font-size: 2em;
-  color: red;
+  color: #fa0a72;
   width: 100%;
   display: flex;
   justify-content: space-around;
